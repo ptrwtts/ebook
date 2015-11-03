@@ -10,7 +10,8 @@ $(document).ready(function () {
     var words = {};
     var lineHeight;
     function getLine(y) {
-    	newLine = Math.ceil((y-lineHeight*2.5)/lineHeight);
+    	fingerBuffer = 2;
+    	newLine = Math.ceil((y-lineHeight*fingerBuffer)/lineHeight);
     	if(newLine<=0) { newLine=1; }
     	return newLine;
     }
